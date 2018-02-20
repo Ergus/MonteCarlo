@@ -4,7 +4,7 @@
 
 all: dispersion.x
 
-dispersion.x: main.c histogram.o
+dispersion.x: main.c histogram.o functions.o
 	gcc $^ -o $@ -lm
 
 %.o: %.c
